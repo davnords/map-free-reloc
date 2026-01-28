@@ -338,6 +338,11 @@ We also provide the depth maps and correspondences computed by [MicKey](https://
 - Download [MicKey correspondences](https://storage.googleapis.com/niantic-lon-static/research/map-free-reloc/assets/mickey_correspondences.zip).
 - Extract the contents of both files to `data/mapfree`
 
+## Download DAv3 depth files
+We also provide the depth maps computed by [DAv3](https://github.com/ByteDance-Seed/Depth-Anything-3).
+- Download [DAv3 depth maps](https://drive.google.com/file/d/1Gruq6QIFqROwUJLpIGYhN4MjAEoJIkvn/view?usp=sharing).
+- Extract the contents of both files to `data/mapfree`
+
 ## Custom feature matching method
 We provide pre-computed correspondences (SIFT, SuperGlue+SuperPoint, LoFTR and MicKey) in the path `data/mapfree/{val|test}/{scene}/correspondences_{feature_method}.npz`
 
