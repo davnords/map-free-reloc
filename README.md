@@ -338,11 +338,6 @@ We also provide the depth maps and correspondences computed by [MicKey](https://
 - Download [MicKey correspondences](https://storage.googleapis.com/niantic-lon-static/research/map-free-reloc/assets/mickey_correspondences.zip).
 - Extract the contents of both files to `data/mapfree`
 
-## Download DAv3 depth files
-We also provide the depth maps computed by [DAv3](https://github.com/ByteDance-Seed/Depth-Anything-3).
-- Download [DAv3 depth maps](https://drive.google.com/file/d/1Gruq6QIFqROwUJLpIGYhN4MjAEoJIkvn/view?usp=sharing).
-- Extract the contents of both files to `data/mapfree`
-
 ## Custom feature matching method
 We provide pre-computed correspondences (SIFT, SuperGlue+SuperPoint, LoFTR and MicKey) in the path `data/mapfree/{val|test}/{scene}/correspondences_{feature_method}.npz`
 
@@ -380,6 +375,7 @@ To use the custom depth maps, create a new config file, see *e.g.* [config/match
 
 **Externally provided custom depth estimation methods:**
 - [KBR depth predictions](https://github.com/jspenmar/slowtv_monodepth#mapfreereloc)
+- [DAv3 depth predictions](https://drive.google.com/file/d/1Gruq6QIFqROwUJLpIGYhN4MjAEoJIkvn/view?usp=sharing).
 
 ## Custom pose solver
 We provide three [pose solvers](lib/models/matching/pose_solver.py): Essential Matrix Decomposition (with metric pose using estimated depth), Perspective-n-Point (PnP) and Procrustes (rigid body transformation given 3D-3D correspondences).
